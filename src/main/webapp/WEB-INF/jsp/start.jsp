@@ -8,5 +8,11 @@
 </head>
 <body>
 
+<form method="post" action="QuestionServlet">
+  <button name="Genre" value="AnimalQuiz" type="submit">動物クイズ</button>
+  <button name="Genre" value="みかん" type="submit">みかん</button>
+  <button name="Genre" value="ブドウ" type="submit">ブドウ</button>
+</form>
+
 </body>
 </html>
