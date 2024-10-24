@@ -34,25 +34,32 @@ public class Quiz {
     		String option =options[questionOrder.get(getCurrentQuestion())][optionnumber];
     	return option;
     }
+    
     public static String answer() {
     	String answer =answers[questionOrder.get(getCurrentQuestion())];
     	return answer;
     }
+    
     public static void currentQuestion() {
     	currentQuestion++;
     }
+    
     public static void score() {
     	score++;
     }
+    
     public static int getscore() {
     	return score;
     }
+    
 	public static ArrayList<Integer> getQuestionOrder() {
 		return questionOrder;
 	}
+	
 	public static int getCurrentQuestion() {
 		return currentQuestion;
 	}
+	
 	public static String getexplanations() {
 		return explanations[questionOrder.get(currentQuestion)];
 	}
