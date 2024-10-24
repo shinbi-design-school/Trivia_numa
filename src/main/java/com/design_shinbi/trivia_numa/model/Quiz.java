@@ -4,30 +4,37 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 public class Quiz {
-	private static String[] questions;
+	private static String[][] questions;
 	private static String[][] options;
 	private static String[] answers;
 	private static String[] explanations;
 	
-	private static ArrayList<Integer> questionOrder = new ArrayList<>();
-    private static int currentQuestion = 0;
-    private static int score = 0;
+	private static ArrayList<Integer> questionOrder;
+    private static int currentQuestion;
+    private static int score;
     
-    public Quiz(String[] questions, String[][] options, String[] answers, String[]explanations) {
+    public Quiz(String[][] questions, String[][] options, String[] answers, String[]explanations) {
     	Quiz.questions =questions;
     	Quiz.options =options;
     	Quiz.answers =answers;
     	Quiz.explanations =explanations;
+    	questionOrder = new ArrayList<>();
+    	currentQuestion = 0;
+        score = 0;
 
-    	for (int i = 0; i < this.questions.length; i++) {
-            getQuestionOrder().add(i);
+    	for (int i = 0; i < Quiz.questions.length; i++) {
+    		questionOrder.add(i);
         }
-        Collections.shuffle(getQuestionOrder());
+        Collections.shuffle(questionOrder);
     }
     
     public static String showQuestion() {
-    	String question =questions[questionOrder.get(getCurrentQuestion())];
+    	String question =questions[questionOrder.get(getCurrentQuestion())][0];
     	return question;
+    }
+    public static String showImg() {
+    	String img =questions[questionOrder.get(getCurrentQuestion())][1];
+    	return img;
     }
     
     public static String showOption(int optionnumber) {
