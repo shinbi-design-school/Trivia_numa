@@ -1,24 +1,20 @@
-package com.design_shinbi.trivia_numa.model.Genre;
-
-import com.design_shinbi.trivia_numa.model.Quiz;
+package com.design_shinbi.trivia_numa.model;
 
 public class AnimalQuiz extends Quiz{
-	
-	
 
-	private static String[] questions = {
-	        "シマエナガは何と呼ばれている？",
-	        "スナネコはどこに住んでいる？",
-	        "遺伝子がオオカミに一番近い犬種は？",
-	        "この動物は何？",
-	        "桃太郎の仲間になった鳥の種類は？",
-	        "ラクダのコブの中には何が入っている？",
-	        "この海の生き物の名前は？",
-	        "タコの足は何本？",
-	        "世界で最も大きな陸上動物は何ですか？",
-	        "ペンギンはどの環境で主に生活していますか？",
-	        "カンガルーはどの大陸に生息していますか？",
-	        "オウムはどのような特長で知られていますか？"
+	private static String[][] questions = {
+			{"シマエナガは何と呼ばれている？","image-animal/1.jpg"},
+			{"スナネコはどこに住んでいる？","image-animal/2.jpg"},
+			{"遺伝子がオオカミに一番近い犬種は？","image-animal/3.jpg"},
+			{"この動物は何？","image-animal/4.jpg"},
+			{"桃太郎の仲間になった鳥の種類は？","image-animal/5.png"},
+			{"ラクダのコブの中には何が入っている？","image-animal/6.png"},
+			{"この海の生き物の名前は？","image-animal/7.jpg"},
+			{"タコの足は何本？","image-animal/8.jpg"},
+			{"世界で最も大きな陸上動物は何ですか？","image-animal/9.jpg"},
+			{"ペンギンはどの環境で主に生活していますか？","image-animal/10.jpg"},
+			{"カンガルーはどの大陸に生息していますか？","image-animal/11.jpg"},
+			{"オウムはどのような特長で知られていますか？","image-animal/12.jpg"}
 	    };
 	
 	 private static String[][] options = {
@@ -50,6 +46,7 @@ public class AnimalQuiz extends Quiz{
 		        "オーストラリア",
 		        "人間の言葉を模倣する"
 		    };
+	 
 	 private static String[] explanations = {
 		        "シマエナガは、白い羽と丸い体形から「雪の精霊」と呼ばれることが多い小さな鳥です。特に冬になると、雪の中で白い羽が目立つことから、「雪の精霊」として親しまれています。また、かわいらしい姿から日本でも人気があります。",
 		        "スナネコは小さな猫のような動物で、乾燥した砂漠地帯に生息しています。体の構造は砂漠の環境に適応しており、日中の暑さを避けて夜行性で活動し、砂漠の小動物を捕えて食べます。",
@@ -66,7 +63,8 @@ public class AnimalQuiz extends Quiz{
 		    };
 	 
 	 public AnimalQuiz() {
-			super(AnimalQuiz.questions, AnimalQuiz.options, AnimalQuiz.answers,AnimalQuiz.explanations, "Animal");
+			super(AnimalQuiz.questions, AnimalQuiz.options, AnimalQuiz.answers,AnimalQuiz.explanations);
 		}
+
 
 }
