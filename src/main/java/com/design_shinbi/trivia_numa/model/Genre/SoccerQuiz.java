@@ -6,17 +6,17 @@ public class SoccerQuiz extends Quiz{
 	
 	
 
-	private static String[] questions = {
-	        "サッカーの試合で、1チームがフィールドにいる選手の最大数は何人ですか？",
-	        "FIFAワールドカップは何年ごとに開催されますか？",
-	        "サッカーの試合で使用されるボールの周囲は、公式にはどのくらいですか？",
-	        "サッカーのポジションの一つで、主に攻撃を担当する選手を何と呼びますか？",
-	        "2014年に開催されたFIFAワールドカップの優勝国はどこですか？",
-	        "FIFAワールドカップで最初に開催された年はいつですか？",
-	        "サッカーの試合で、直接フリーキックが与えられるのはどのようなファウルのときですか？",
-	        "サッカーの試合で、最も多くのゴールを決めた選手は誰ですか？",
-	        "サッカーの試合で、1チームが獲得できる最大のポイントは何ポイントですか？",
-	        "サッカーの試合で、ゴールキーパーがボールを手で触れることができるのはどのエリア内ですか？"
+	private static String[][] questions = {
+			{"サッカーの試合で、1チームがフィールドにいる選手の最大数は何人ですか？","image-soccer/1.jpg"},
+			{"FIFAワールドカップは何年ごとに開催されますか？","image-soccer/2.jpg"},
+			{"サッカーの試合で使用されるボールの周囲は、公式にはどのくらいですか？","image-soccer/3.jpg"},
+			{"サッカーのポジションの一つで、主に攻撃を担当する選手を何と呼びますか？","image-soccer/4.jpg"},
+			{"2014年に開催されたFIFAワールドカップの優勝国はどこですか？","image-soccer/5.jpg"},
+			{"FIFAワールドカップで最初に開催された年はいつですか？","image-soccer/6.jpg"},
+			{"サッカーの試合で、直接フリーキックが与えられるのはどのようなファウルのときですか？","image-soccer/7.jpg"},
+			{"サッカーの試合で、最も多くのゴールを決めた選手は誰ですか？","image-soccer/8.jpeg"},
+			{"サッカーの試合で、1チームが獲得できる最大のポイントは何ポイントですか？","image-soccer/9.png"},
+			{"サッカーの試合で、ゴールキーパーがボールを手で触れることができるのはどのエリア内ですか？","image-soccer/10.jpg"}
 	    };
 	
 	 private static String[][] options = {
@@ -61,7 +61,7 @@ public class SoccerQuiz extends Quiz{
 		    };
 	 
 	 public SoccerQuiz() {
-			super(SoccerQuiz.questions, SoccerQuiz.options, SoccerQuiz.answers,SoccerQuiz.explanations, "Soccer");
+			super(SoccerQuiz.questions, SoccerQuiz.options, SoccerQuiz.answers,SoccerQuiz.explanations);
 		}
 
 

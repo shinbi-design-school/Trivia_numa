@@ -6,17 +6,17 @@ public class SportsQuiz extends Quiz{
 	
 	
 
-	private static String[] questions = {
-	        "メッシの出身は？",
-	        "歴代バロンドール最多は？",
-	        "プロ野球において1940年4月6日に阪急軍対南海軍戦で記録した1試合最大の点差は？",
-	        "ワールドカップの優勝最多国は？",
-	        "大谷翔平の身長は？",
-	        "ダルビッシュの身長は？",
-	        "Jリーグの公式戦一試合で、最も多く点が入った試合のスコアはどれでしょうか？",
-	        "W杯2022、「三笘の1mm」は実際何mmだった？",
-	        "沢村賞の元になってる沢村英二が、当時成績が急低下した理由は何？",
-	        "1930年に初めて開催されたW杯で優勝した国は？"
+	private static String[][] questions = {
+			{"メッシの出身は？","image-sports/1.jpg"},
+			{"歴代バロンドール最多は？","image-sports/2.jpg"},
+			{"プロ野球において1940年4月6日に阪急軍対南海軍戦で記録した1試合最大の点差は？","image-sports/3.jpg"},
+			{"ワールドカップの優勝最多国は？","image-sports/4.jpg"},
+			{"大谷翔平の身長は？","image-sports/5.jpg"},
+			{"ダルビッシュの身長は？","image-sports/6.jpg"},
+			{"Jリーグの公式戦一試合で、最も多く点が入った試合のスコアはどれでしょうか？","image-sports/7.jpg"},
+			{"W杯2022、「三笘の1mm」は実際何mmだった？","image-sports/8.jpeg"},
+			{"沢村賞の元になってる沢村英二が、当時成績が急低下した理由は何？","image-sports/9.jpg"},
+			{"1930年に初めて開催されたW杯で優勝した国は？","image-sports/10.jpg"}
 	    };
 	
 	 private static String[][] options = {
@@ -58,7 +58,7 @@ public class SportsQuiz extends Quiz{
 		    };
 	 
 	 public SportsQuiz() {
-			super(SportsQuiz.questions, SportsQuiz.options, SportsQuiz.answers,SportsQuiz.explanations, "Sports");
+			super(SportsQuiz.questions, SportsQuiz.options, SportsQuiz.answers,SportsQuiz.explanations);
 		}
 
 

@@ -6,17 +6,17 @@ public class EntertainmentQuiz extends Quiz{
 	
 	
 
-	private static String[] questions = {
-	        "映画『タイタニック』で主演を務めた俳優は誰ですか？",
-	        "日本の音楽グループ「嵐」は何年にデビューしましたか？",
-	        "アメリカのテレビドラマ『フレンズ』の舞台となった都市はどこですか？",
-	        "オスカー賞で「最優秀作品賞」を受賞した映画はどれですか？",
-	        "日本の漫画『ドラゴンボール』の作者は誰ですか？",
-	        "日本のバンド「X JAPAN」のリーダーは誰ですか？",
-	        "『スター・ウォーズ』シリーズで、ルーク・スカイウォーカーの父親は誰ですか？",
-	        "韓国の人気グループBTSのデビュー年は何年ですか？",
-	        "『ハリー・ポッター』シリーズの著者は誰ですか？",
-	        "アカデミー賞の「最優秀監督賞」を受賞した日本人監督は誰ですか？"
+	private static String[][] questions = {
+			{"映画『タイタニック』で主演を務めた俳優は誰ですか？","image-talent/1.jpg"},
+			{"日本の音楽グループ「嵐」は何年にデビューしましたか？","image-talent/2.jpg"},
+			{"アメリカのテレビドラマ『フレンズ』の舞台となった都市はどこですか？","image-talent/3.jpg"},
+			{"オスカー賞で「最優秀作品賞」を受賞した映画はどれですか？","image-talent/4.jpg"},
+			{"日本の漫画『ドラゴンボール』の作者は誰ですか？","image-talent/5.jpg"},
+			{"日本のバンド「X JAPAN」のリーダーは誰ですか？","image-talent/6.jpg"},
+			{"『スター・ウォーズ』シリーズで、ルーク・スカイウォーカーの父親は誰ですか？","image-talent/7.jpg"},
+			{"韓国の人気グループBTSのデビュー年は何年ですか？","image-talent/8.jpg"},
+			{"『ハリー・ポッター』シリーズの著者は誰ですか？","image-talent/9.jpg"},
+			{"アカデミー賞の「最優秀監督賞」を受賞した日本人監督は誰ですか？","image-talent/10.jpg"}
 	    };
 	
 	 private static String[][] options = {
@@ -58,7 +58,7 @@ public class EntertainmentQuiz extends Quiz{
 		    };
 	 
 	 public EntertainmentQuiz() {
-			super(EntertainmentQuiz.questions, EntertainmentQuiz.options, EntertainmentQuiz.answers,EntertainmentQuiz.explanations, "Entertainment");
+			super(EntertainmentQuiz.questions, EntertainmentQuiz.options, EntertainmentQuiz.answers,EntertainmentQuiz.explanations);
 		}
 
 

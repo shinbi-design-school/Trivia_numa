@@ -6,17 +6,17 @@ public class BaseballQuiz extends Quiz{
 	
 	
 
-	private static String[] questions = {
-	        "MLBの「オールスターゲーム」は通常どの時期に開催されますか？",
-	        "野球の試合で、「デッドボール」とはどのような状況を指しますか？",
-	        "MLB（メジャーリーグベースボール）で、シーズン中の試合数は通常何試合ですか？",
-	        "野球のポジションで、「キャッチャー」はどの位置を守りますか？",
-	        "野球の試合で、「ストライク」とは何を意味しますか？",
-	        "野球で「ホームラン」はどのような状況で発生しますか？",
-	        "MLBで最も多くのワールドシリーズ優勝を果たしているチームはどこですか？",
-	        "野球の試合で、「クローザー」とはどのような役割を持つ選手ですか？",
-	        "野球で「サイクルヒット」とは何を指しますか？",
-	        "野球の試合で、先発ピッチャーが7イニング投げた後に交代した場合、何と呼ばれますか？"
+	private static String[][] questions = {
+			{"MLBの「オールスターゲーム」は通常どの時期に開催されますか？","image-baseball/1.jpg"},
+			{"野球の試合で、「デッドボール」とはどのような状況を指しますか？","image-baseball/2.png"},
+			{"MLB（メジャーリーグベースボール）で、シーズン中の試合数は通常何試合ですか？","image-baseball/3.jpg"},
+			{"野球のポジションで、「キャッチャー」はどの位置を守りますか？","image-baseball/4.jpg"},
+			{"野球の試合で、「ストライク」とは何を意味しますか？","image-baseball/5.jpg"},
+			{"野球で「ホームラン」はどのような状況で発生しますか？","image-baseball/6.jpg"},
+			{"MLBで最も多くのワールドシリーズ優勝を果たしているチームはどこですか？","image-baseball/7.jpg"},
+			{"野球の試合で、「クローザー」とはどのような役割を持つ選手ですか？","image-baseball/8.jpg"},
+		    {"野球で「サイクルヒット」とは何を指しますか？","image-baseball/9.jpg"},
+			{"野球の試合で、先発ピッチャーが7イニング投げた後に交代した場合、何と呼ばれますか？","image-baseball/10.jpg"}
 	    };
 	
 	 private static String[][] options = {
@@ -58,7 +58,7 @@ public class BaseballQuiz extends Quiz{
 		    };
 	 
 	 public BaseballQuiz() {
-			super(BaseballQuiz.questions, BaseballQuiz.options, BaseballQuiz.answers,BaseballQuiz.explanations, "Baseball");
+			super(BaseballQuiz.questions, BaseballQuiz.options, BaseballQuiz.answers,BaseballQuiz.explanations);
 		}
 
 

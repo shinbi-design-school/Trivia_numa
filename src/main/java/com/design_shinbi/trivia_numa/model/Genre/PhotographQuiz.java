@@ -6,17 +6,17 @@ public class PhotographQuiz extends Quiz{
 	
 	
 
-	private static String[] questions = {
-	        "世界で最初に撮影された写真は、何年に撮影されたでしょう？",
-	        "「ゴールデンアワー」とは、写真撮影においてどの時間帯を指すでしょう？",
-	        "有名なアーティストの「アーノルド・ニューウェル」は、何を専門にした写真家でしょう？",
-	        "「マクロ写真」とは何を撮影することを指しますか？",
-	        "写真における「露出」とは、何を指すでしょう？",
-	        "フィルム写真とデジタル写真の主な違いは何でしょう？",
-	        "「構図」とは、写真のどの要素を指すでしょう？",
-	        "「ストリートフォトグラフィー」は、主にどのような場面を捉えることを目的としていますか？",
-	        "有名な写真家アニー・リーボヴィッツは、主にどのような分野で知られていますか？",
-	        "「バーストモード」とは、どのような撮影方法でしょう？"
+	private static String[][] questions = {
+			{"世界で最初に撮影された写真は、何年に撮影されたでしょう？","image-camera/1.jpg"},
+			{"「ゴールデンアワー」とは、写真撮影においてどの時間帯を指すでしょう？","image-camera/2.jpg"},
+			{"有名なアーティストの「アーノルド・ニューウェル」は、何を専門にした写真家でしょう？","image-camera/3.jpg"},
+			{"「マクロ写真」とは何を撮影することを指しますか？","image-camera/4.jpg"},
+			{"写真における「露出」とは、何を指すでしょう？","image-camera/5.jpg"},
+			{"フィルム写真とデジタル写真の主な違いは何でしょう？","image-camera/6.jpg"},
+			{"「構図」とは、写真のどの要素を指すでしょう？","image-camera/7.jpg"},
+			{"「ストリートフォトグラフィー」は、主にどのような場面を捉えることを目的としていますか？","image-camera/8.jpg"},
+			{"有名な写真家アニー・リーボヴィッツは、主にどのような分野で知られていますか？","image-camera/9.jpg"},
+			{"「バーストモード」とは、どのような撮影方法でしょう？","image-camera/10.jpg"}
 	    };
 	
 	 private static String[][] options = {
@@ -58,7 +58,7 @@ public class PhotographQuiz extends Quiz{
 		    };
 	 
 	 public PhotographQuiz() {
-			super(PhotographQuiz.questions, PhotographQuiz.options, PhotographQuiz.answers,PhotographQuiz.explanations, "Photograph");
+			super(PhotographQuiz.questions, PhotographQuiz.options, PhotographQuiz.answers,PhotographQuiz.explanations);
 		}
 
 
