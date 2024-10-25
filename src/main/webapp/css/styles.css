@@ -1,0 +1,127 @@
+@charset "UTF-8";
+
+/* jsp 全体 */
+
+/* リセットスタイル */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.top {
+    max-width: 100%;
+    background-image: url('img/backimg.png');
+    background-size: cover;
+    padding: 20px;
+    text-align: center;
+}
+
+.title {
+    font-size: 2em;
+    color: #ffcc00;
+    margin-bottom: 20px;
+}
+
+.main_nav {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding: 0;
+	flex-wrap: wrap;
+}
+
+.main_nav li {
+	display: inline-block;
+    margin: 100px 10px 0;
+    color: #555;
+	white-space: nowrap;
+	flex: 1 1 auto;
+}
+
+h3.genre,
+h3.programming {
+    margin: 20px 0;
+    text-align: center;
+}
+
+main {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	max-width: 80%;
+	margin: 0 auto;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap; /* 行を折り返す */
+    justify-content: center;
+    gap: 10px; /* ボタン間のスペース */
+	width: 100%;
+}
+
+.button-container {
+	display: flex;
+	flex: 1 1 calc(33.33% - 10px);
+	max-width: 150px;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    transition: transform 0.2s;
+    width: 100%;
+}
+
+button:hover {
+    transform: scale(1.05); /* ホバー時に少し拡大 */
+}
+
+button img {
+    width: 100%; /* ボタン内の画像の幅 */
+    height: auto; /* 高さは自動調整 */
+    border-radius: 8px; /* 角を丸く */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 影を追加 */
+}
+
+@media (max-width: 600px) {
+	.main_nav li {
+		margin: 5px 0;
+	}
+	
+    button {
+        flex: 1 1 calc(50% - 10px); /* スマホ表示時に2列にする */
+    }
+	
+    button img {
+        width: 80px; /* スマホ表示時の画像サイズ */
+    }
+}
+
+
+/* question.jsp */
+  .quiz-image{
+	width: 100%; /* 親要素の幅に合わせる */
+    max-width: 300px; /* 最大幅を設定 */
+    height: auto; /* アスペクト比を維持 */
+    object-fit: cover; /* 画像の切り取りを指定 */
+    display: block; /* ブロック要素にして中央揃え */
+	margin: 0 auto; /* 中央揃え */
+  }
+  
+/* result.jsp */
+
+/* answer.jsp */
