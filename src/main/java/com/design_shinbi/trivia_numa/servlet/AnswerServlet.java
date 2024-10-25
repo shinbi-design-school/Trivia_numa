@@ -42,6 +42,7 @@ public class AnswerServlet extends HttpServlet {
 		Quiz quizs = (Quiz) session.getAttribute("quizs");
 		
 		String Answer = request.getParameter("Answer");
+		String correct = Quiz.answer();
 		String result = null;
 		
 		if(Answer.equals(Quiz.answer())) {
@@ -61,6 +62,7 @@ public class AnswerServlet extends HttpServlet {
 		}
 		
 		request.setAttribute("result", result);
+		request.setAttribute("correct", correct);
 		request.setAttribute("explanations", explanations);
 		request.setAttribute("buttonUrl", buttonUrl);
 
