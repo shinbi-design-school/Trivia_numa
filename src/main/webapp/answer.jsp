@@ -2,6 +2,7 @@
     pageEncoding="UTF-8"%>
 <%
 String result =(String)request.getAttribute("result");
+String correct =(String)request.getAttribute("correct");
 String explanations =(String)request.getAttribute("explanations");
 String buttonUrl =(String)request.getAttribute("buttonUrl");
 %>
@@ -14,6 +15,7 @@ String buttonUrl =(String)request.getAttribute("buttonUrl");
 <body>
 
 <h2><%=result %></h2>
+<h2>正解は「<%=correct %>」です。</h2>
 <h3><%=explanations %></h3>
 <a href=<%=buttonUrl %>>次へ</a>
 
