@@ -9,35 +9,20 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
 
-import com.design_shinbi.trivia_numa.model.AnimalQuiz;
 import com.design_shinbi.trivia_numa.model.Quiz;
-
-/**
- * Servlet implementation class QuestionServlet
- */
+import com.design_shinbi.trivia_numa.model.Genre.AnimalQuiz;
+import com.design_shinbi.trivia_numa.model.Genre.BaseballQuiz;
+import com.design_shinbi.trivia_numa.model.Genre.EntertainmentQuiz;
+import com.design_shinbi.trivia_numa.model.Genre.PhotographQuiz;
+import com.design_shinbi.trivia_numa.model.Genre.SoccerQuiz;
+import com.design_shinbi.trivia_numa.model.programming.Html_Css;
+import com.design_shinbi.trivia_numa.model.programming.JavaScript;
+import com.design_shinbi.trivia_numa.model.programming.Java_F;
+import com.design_shinbi.trivia_numa.model.programming.Jsp_Servlet;
+import com.design_shinbi.trivia_numa.model.programming.Mysql;
 
 public class QuestionServlet extends HttpServlet {
-	private static final long serialVersionUID = 1L;
-       
-    /**
-     * @see HttpServlet#HttpServlet()
-     */
-    public QuestionServlet() {
-        super();
-        // TODO Auto-generated constructor stub
-    }
-
-	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
-	 */
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		response.getWriter().append("Served at: ").append(request.getContextPath());
-	}
-
-	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
-	 */
+	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.setCharacterEncoding("UTF-8");
 		HttpSession session = request.getSession();
@@ -75,6 +60,7 @@ public class QuestionServlet extends HttpServlet {
 				 quizs = new Mysql();
 				 break;
 		}
+		Quiz.shuffleOption();
 		session.setAttribute("quizs", quizs);
 		RequestDispatcher dispatcher = request.getRequestDispatcher("question.jsp");
 		dispatcher.forward(request, response);

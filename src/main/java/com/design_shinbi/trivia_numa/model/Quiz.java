@@ -12,6 +12,7 @@ public class Quiz {
 	private static ArrayList<Integer> questionOrder;
     private static int currentQuestion;
     private static int score;
+    private static ArrayList<String> optionList;
     
     public Quiz(String[][] questions, String[][] options, String[] answers, String[]explanations) {
     	Quiz.questions =questions;
@@ -37,10 +38,14 @@ public class Quiz {
     	return img;
     }
     
-    public static String showOption(int optionnumber) {
-    		String option =options[questionOrder.get(getCurrentQuestion())][optionnumber];
-    	return option;
-    }
+  public static void shuffleOption() {
+	  optionList = new ArrayList<>();
+	for(String x: options[questionOrder.get(getCurrentQuestion())]) {
+		getOptionList().add(x);
+	}
+	Collections.shuffle(getOptionList());
+}
+    
     public static String answer() {
     	String answer =answers[questionOrder.get(getCurrentQuestion())];
     	return answer;
@@ -62,5 +67,9 @@ public class Quiz {
 	}
 	public static String getexplanations() {
 		return explanations[questionOrder.get(currentQuestion)];
+	}
+
+	public static ArrayList<String> getOptionList() {
+		return optionList;
 	}
 }
