@@ -32,25 +32,14 @@ body {
     border-radius: 20px;
 }
 
-/* ハンバーガーメニュー */
-.hamburger {
-    position: absolute; /* 絶対位置 */
-    top: 15px; /* 上からの距離 */
-    right: 15px; /* 右からの距離 */
-    cursor: pointer; /* カーソルをポインターに */
-    z-index: 10; /* 他の要素より前面に */
-}
-
 /* メインナビゲーション */
 .main_nav {
-    display: none; /* 初期状態で非表示 */
-    flex-direction: column; /* 縦方向に並べる */
-    position: absolute; /* 絶対位置 */
-    top: 60px; /* ハンバーガーアイコンの下に配置 */
-    right: 0; /* 右端に配置 */
-    background-color: #003366; /* 背景色 */
-    width: 100%; /* 幅を100%に */
-    z-index: 9; /* ハンバーガーより下に */
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    background-color: #003366;
+    width: 100%;
+    z-index: 9;
 }
 
 .main_nav li {
@@ -130,6 +119,7 @@ button img {
 }
 
 /* スマートフォン表示時のスタイル */
+/* スマートフォン表示時のスタイル */
 @media (max-width: 798px) {
     .button-container {
         grid-template-columns: 1fr; /* 一列に */
@@ -149,6 +139,20 @@ button img {
         font-size: 16px; /* フォントサイズを調整 */
         text-align: center;
     }
+
+    .main_nav {
+        display: grid; /* グリッドレイアウトに変更 */
+        grid-template-columns: repeat(5, 1fr); /* 5列に設定 */
+        position: relative; /* 相対位置 */
+        background-color: #003366;
+        width: 100%;
+        z-index: 9;
+    }
+
+    .main_nav li {
+        margin: 5px; /* 各項目の間にマージンを追加 */
+        text-align: center; /* 中央揃え */
+    }
 }
 
 .return {
@@ -156,4 +160,179 @@ button img {
     max-width: 600px; /* 最大幅を設定 */
     margin: 20px 0; /* マージンを調整 */
     text-align: center;
+}
+
+
+/* js */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/*question*/
+.quiz-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	text-align: center;
+    min-height: 100vh; /* 縦方向のセンタリング */
+    background-color: #007bff; /* 背景色を青に */
+}
+
+.button-wrap {
+    text-align: center; /* 中央揃え */
+    padding: 20px;
+    background-color: #ffffff; /* 背景色 */
+    border-radius: 10px; /* 角を丸める */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* シャドウ */
+    max-width: 600px; /* 最大幅 */
+    width: 90%; /* 幅を90%に */
+}
+
+.quiz-question {
+    font-size: 24px; /* フォントサイズ */
+    color: #333; /* テキストカラー */
+    margin-bottom: 20px; /* 下のマージン */
+}
+
+.quiz-image {
+    width: 100%; /* 画像をコンテナにフィットさせる */
+    max-width: 100%; /* 最大幅を制限 */
+    border-radius: 10px; /* 角を丸める */
+    margin-bottom: 20px; /* 下のマージン */
+}
+
+.quiz-form {
+    display: flex;
+    flex-direction: column; /* 縦に並べる */
+    gap: 20px; /* 上下のギャップ */
+}
+
+.button-wrap {
+	margin:0 auto;
+    display: grid; /* グリッドを使用 */
+    grid-template-columns: repeat(2, 1fr); /* 2列に設定 */
+    gap: 10px; /* ボタン間のギャップ */
+}
+
+.quiz-button {
+    padding: 15px; /* ボタンのパディング */
+    background-color: #007bff; /* ボタンの背景色 */
+    color: #ffffff; /* ボタンのテキストカラー */
+    border: none; /* ボーダーを消す */
+    border-radius: 5px; /* 角を丸める */
+    cursor: pointer; /* カーソルをポインターに */
+    transition: background-color 0.3s; /* ホバー時のトランジション */
+    font-size: 16px; /* フォントサイズ */
+}
+
+.quiz-button:hover {
+    background-color: #0056b3; /* ホバー時の色 */
+}
+
+.quiz-image {
+    width: 100%; /* 画像をコンテナにフィットさせる */
+    height: 200px; /* 高さを固定 */
+    object-fit: cover; /* 画像のアスペクト比を維持しながら中央に収める */
+    border-radius: 10px; /* 角を丸める */
+    margin-bottom: 20px; /* 下のマージン */
+}
+
+
+
+/*answer*/
+.answer-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* 縦方向のセンタリング */
+    background-color: #f9f9f9; /* 背景色 */
+}
+
+.result-container {
+    text-align: center; /* 中央揃え */
+    padding: 20px;
+    background-color: #ffffff; /* 背景色 */
+    border-radius: 10px; /* 角を丸める */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* シャドウ */
+    max-width: 600px; /* 最大幅 */
+    width: 90%; /* 幅を90%に */
+}
+
+.result-title {
+    font-size: 24px; /* フォントサイズ */
+    color: #333; /* テキストカラー */
+    margin-bottom: 10px; /* 下のマージン */
+}
+
+.correct-answer {
+    font-size: 20px; /* フォントサイズ */
+    color: #007bff; /* テキストカラー */
+    margin-bottom: 10px; /* 下のマージン */
+}
+
+.explanation {
+    font-size: 16px; /* フォントサイズ */
+    color: #555; /* テキストカラー */
+    margin-bottom: 20px; /* 下のマージン */
+}
+
+.next-button {
+    display: inline-block; /* ボタンのスタイル */
+    padding: 10px 20px; /* パディング */
+    background-color: #28a745; /* ボタンの背景色 */
+    color: #fff; /* ボタンのテキストカラー */
+    text-decoration: none; /* 下線を消す */
+    border-radius: 5px; /* 角を丸める */
+    transition: background-color 0.3s; /* ホバー時のトランジション */
+}
+
+.next-button:hover {
+    background-color: #218838; /* ホバー時の色 */
+}
+
+/*result*/
+.result-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* 縦方向のセンタリング */
+    background-color: #f0f0f0; /* 背景色 */
+}
+
+.result-container {
+    text-align: center; /* 中央揃え */
+    padding: 20px;
+    background-color: #ffffff; /* 背景色 */
+    border-radius: 10px; /* 角を丸める */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* シャドウ */
+}
+
+.result-title {
+    font-size: 24px; /* フォントサイズ */
+    color: #333; /* テキストカラー */
+    margin-bottom: 20px; /* 下のマージン */
+}
+
+.restart-button {
+    display: inline-block; /* ボタンのスタイル */
+    padding: 10px 20px; /* パディング */
+    background-color: #007bff; /* ボタンの背景色 */
+    color: #fff; /* ボタンのテキストカラー */
+    text-decoration: none; /* 下線を消す */
+    border-radius: 5px; /* 角を丸める */
+    transition: background-color 0.3s; /* ホバー時のトランジション */
+}
+
+.restart-button:hover {
+    background-color: #0056b3; /* ホバー時の色 */
 }

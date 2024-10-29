@@ -25,10 +25,6 @@
             <img src="img/logo-3.png" alt="ロゴロゴロゴ">
         </div>
 
-        <div class="hamburger" id="hamburger">
-            &#9776; <!-- ハンバーガーアイコン -->
-        </div>
-
         <ul class="main_nav" id="nav">
             <li class="Genre"><a href="#genre">動物</a></li>
             <li class="Genre"><a href="#genre">野球</a></li>
@@ -52,7 +48,7 @@
 <form method="post" action="QuestionServlet">
 
 	<div class="button-container">
-		<section id="genre">
+		<div id="genre">
   			<button name="Genre" value="AnimalQuiz" type="submit">
   				<img src="img/image-animal/1.jpg" alt="動物クイズ">
   				<div class="quiz-info">
@@ -60,9 +56,9 @@
   					<p>動物に関する知識を試そう！！</p>
   				</div>
   			</button>
-  		</section>
+  		</div>
   	
-  		<section id="genre">
+  		<div id="genre">
   			<button name="Genre" value="BaseballQuiz" type="submit">
   				<img src="img/image-baseball/1.jpg" alt="野球クイズ">
   				<div class="quiz-info">
@@ -70,9 +66,9 @@
   					<p>野球に関する知識を試そう！！</p>
   				</div>
   			</button>
-  		</section>
+  		</div>
   	
-  		<section id="genre">
+  		<div id="genre">
   			<button name="Genre" value="SoccerQuiz" type="submit">
   				<img src="img/image-soccer/1.jpg" alt="サッカークイズ">
   				<div class="quiz-info">
@@ -80,9 +76,9 @@
   					<p>サッカーに関する知識を試そう！！</p>
   				</div>
   			</button>
-  		</section>
+  		</div>
   	
-  		<section id="genre">
+  		<div id="genre">
   			<button name="Genre" value="SportsQuiz" type="submit">
   				<img src="img/image-sports/1.jpg" alt="スポーツクイズ">
   				<div class="quiz-info">
@@ -90,9 +86,9 @@
   					<p>スポーツ総合に関する知識を試そう！！</p>
   				</div>
   			</button>
-  		</section>
+  		</div>
   	
-  		<section id="genre">
+  		<div id="genre">
   			<button name="Genre" value="EntertainmentQuiz" type="submit">
   				<img src="img/image-talent/1.jpg" alt="芸能クイズ">
   				<div class="quiz-info">
@@ -100,9 +96,9 @@
   					<p>芸能関係に関する知識を試そう！！</p>
   				</div>
   			</button>
-  		</section>
+  		</div>
   	
-  		<section id="genre">
+  		<div id="genre">
   			<button name="Genre" value="PhotographQuiz" type="submit">
   				<img src="img/image-camera/1.jpg" alt="写真クイズ">
   				<div class="quiz-info">
@@ -110,7 +106,7 @@
   					<p>写真に関する知識を試そう！！</p>
   				</div>
   			</button>
-  		</section>
+  		</div>
   	</div>
 </form>
   <div class="return">
@@ -120,7 +116,7 @@
 
 <form method="post" action="QuestionServlet">	
 	<div class="button-container">
-		<section id="programming">
+		<div id="programming">
   			<button name="Genre" value="Html_Css" type="submit">
   				<img src="img/image-program/1.jpg" alt="Html/Cssクイズ">
   				<div class="quiz-info">
@@ -128,9 +124,9 @@
   					<p>HTML5/CSS3に関する知識を試そう！！</p>
   				</div>
   			</button>
-  		</section>
+  		</div>
   	
-  		<section id="programming">
+  		<div id="programming">
   			<button name="Genre" value="JavaScript" type="submit">
   				<img src="img/image-program/11.jpg" alt="JavaScriptクイズ">
   				<div class="quiz-info">
@@ -138,9 +134,9 @@
   					<p>JavaScriptに関する知識を試そう！！</p>
   				</div>
   			</button>
-  		</section>
+  		</div>
   	
-  		<section id="programming">
+  		<div id="programming">
   			<button name="Genre" value="Java_F" type="submit">
   				<img src="img/image-program/12.jpg" alt="Javaクイズ">
   				<div class="quiz-info">
@@ -148,9 +144,9 @@
   					<p>Javaに関する知識を試そう！！</p>
   				</div>
   			</button>
-  		</section>	
+  		</div>	
   	
-  		<section id="programming">
+  		<div id="programming">
   			<button name="Genre" value="Jsp_Servlet" type="submit">
   				<img src="img/image-program/13.jpeg" alt="Jsp_Servletクイズ">
   				<div class="quiz-info">
@@ -158,9 +154,9 @@
   					<p>JSP/Servletに関する知識を試そう！！</p>
   				</div>
   			</button>
-  		</section>
+  		</div>
   	
-  		<section id="programming">
+  		<div id="programming">
   			<button name="Genre" value="Mysql" type="submit">
   				<img src="img/image-program/4.jpeg" alt="Mysqlクイズ">
   				<div class="quiz-info">
