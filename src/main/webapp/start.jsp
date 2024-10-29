@@ -14,47 +14,45 @@
 <head>
 
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title></title>
 <link rel="stylesheet" type="text/css" href="css/styles.css">
 
 </head>
 <body>
 
 <header class="top">
-	
-	<h2 class="title">Trivia_numa</h2>
-	
-	<ul class="main_nav">
-		<div class="Genre" id="Genre">
-			<li><a href="#animal">動物</a></li>
-			<li><a href="#baseball">野球</a></li>
-			<li><a href="#soccer">サッカー</a></li>
-			<li><a href="#sports">スポーツ</a></li>
-			<li><a href="#entertainment">芸能</a></li>
-			<li><a href="#photograph">写真</a></li>
-		</div>
-		<div class="programming" id="programming">
-			<li><a href="#html_css">HTML/CSS</a></li>
-			<li><a href="#java_f">Java</a></li>
-			<li><a href="#javascript">JavaScript</a></li>
-			<li><a href="#jsp_servlet">JSP-servlet</a></li>
-			<li><a href="#my_sql">DATABASE (MySQL)</a></li>
-		</div>
-	</ul>
+        <div class="logo" id="top">
+            <img src="img/logo-3.png" alt="ロゴロゴロゴ">
+        </div>
 
-</div>
+        <div class="hamburger" id="hamburger">
+            &#9776; <!-- ハンバーガーアイコン -->
+        </div>
 
-</header>
+        <ul class="main_nav" id="nav">
+            <li class="Genre"><a href="#genre">動物</a></li>
+            <li class="Genre"><a href="#genre">野球</a></li>
+            <li class="Genre"><a href="#genre">サッカー</a></li>
+            <li class="Genre"><a href="#genre">スポーツ</a></li>
+            <li class="Genre"><a href="#genre">芸能</a></li>
+            <li class="Genre"><a href="#genre">写真</a></li>
+            <li class="programming"><a href="#programming">HTML/CSS</a></li>
+            <li class="programming"><a href="#programming">Java</a></li>
+            <li class="programming"><a href="#programming">JavaScript</a></li>
+            <li class="programming"><a href="#programming">JSP-servlet</a></li>
+            <li class="programming"><a href="#programming">DATABASE (MySQL)</a></li>
+        </ul>
+    </header>
 
 <main>
 	
-<h3 class="genre">気になるクイズを選択してください！</h3>
+<h3 class="genre">ーーーーーー気になるクイズを選択してください！ーーーーーー</h3>
 
 
 <form method="post" action="QuestionServlet">
 
 	<div class="button-container">
-		<section id="animal">
+		<section id="genre">
   			<button name="Genre" value="AnimalQuiz" type="submit">
   				<img src="img/image-animal/1.jpg" alt="動物クイズ">
   				<div class="quiz-info">
@@ -64,7 +62,7 @@
   			</button>
   		</section>
   	
-  		<section id="baseball">
+  		<section id="genre">
   			<button name="Genre" value="BaseballQuiz" type="submit">
   				<img src="img/image-baseball/1.jpg" alt="野球クイズ">
   				<div class="quiz-info">
@@ -74,7 +72,7 @@
   			</button>
   		</section>
   	
-  		<section id="soccer">
+  		<section id="genre">
   			<button name="Genre" value="SoccerQuiz" type="submit">
   				<img src="img/image-soccer/1.jpg" alt="サッカークイズ">
   				<div class="quiz-info">
@@ -84,7 +82,7 @@
   			</button>
   		</section>
   	
-  		<section id="sports">
+  		<section id="genre">
   			<button name="Genre" value="SportsQuiz" type="submit">
   				<img src="img/image-sports/1.jpg" alt="スポーツクイズ">
   				<div class="quiz-info">
@@ -94,7 +92,7 @@
   			</button>
   		</section>
   	
-  		<section id="entertainment">
+  		<section id="genre">
   			<button name="Genre" value="EntertainmentQuiz" type="submit">
   				<img src="img/image-talent/1.jpg" alt="芸能クイズ">
   				<div class="quiz-info">
@@ -104,7 +102,7 @@
   			</button>
   		</section>
   	
-  		<section id="photograph">
+  		<section id="genre">
   			<button name="Genre" value="PhotographQuiz" type="submit">
   				<img src="img/image-camera/1.jpg" alt="写真クイズ">
   				<div class="quiz-info">
@@ -115,12 +113,14 @@
   		</section>
   	</div>
 </form>
-  
-<h3 class="programming">自身の知識を試してみてください！</h3>
+  <div class="return">
+		<p><a href="#top">トップへ戻る</a></p>
+	</div>
+<h3 class="programming">ーーーーーー自身の知識を試してみてください！ーーーーーー</h3>
 
 <form method="post" action="QuestionServlet">	
 	<div class="button-container">
-		<section id="html_css">
+		<section id="programming">
   			<button name="Genre" value="Html_Css" type="submit">
   				<img src="img/image-program/1.jpg" alt="Html/Cssクイズ">
   				<div class="quiz-info">
@@ -130,7 +130,7 @@
   			</button>
   		</section>
   	
-  		<section id="javascript">
+  		<section id="programming">
   			<button name="Genre" value="JavaScript" type="submit">
   				<img src="img/image-program/11.jpg" alt="JavaScriptクイズ">
   				<div class="quiz-info">
@@ -140,7 +140,7 @@
   			</button>
   		</section>
   	
-  		<section id="java_f">
+  		<section id="programming">
   			<button name="Genre" value="Java_F" type="submit">
   				<img src="img/image-program/12.jpg" alt="Javaクイズ">
   				<div class="quiz-info">
@@ -150,7 +150,7 @@
   			</button>
   		</section>	
   	
-  		<section id="jsp_servlet">
+  		<section id="programming">
   			<button name="Genre" value="Jsp_Servlet" type="submit">
   				<img src="img/image-program/13.jpeg" alt="Jsp_Servletクイズ">
   				<div class="quiz-info">
@@ -160,7 +160,7 @@
   			</button>
   		</section>
   	
-  		<section id="my_sql">
+  		<section id="programming">
   			<button name="Genre" value="Mysql" type="submit">
   				<img src="img/image-program/4.jpeg" alt="Mysqlクイズ">
   				<div class="quiz-info">
@@ -171,7 +171,9 @@
   		</div>
   	</div>
  </form>
-
+ 	<div class="return">
+		<p><a href="#top">トップへ戻る</a></p>
+	</div>
 </main>
 
 <script src="js/script.js"></script>
