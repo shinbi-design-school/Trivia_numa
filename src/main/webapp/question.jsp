@@ -3,25 +3,28 @@
 <%@ page import="com.design_shinbi.trivia_numa.model.Quiz " %>
 <%@ page import="com.design_shinbi.trivia_numa.model.Genre.AnimalQuiz" %>
 <%
-Quiz quizs =(Quiz)session.getAttribute("quizs");
+Quiz quizs = (Quiz) session.getAttribute("quizs");
 %>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Quiz Page</title>
 <link rel="stylesheet" type="text/css" href="css/reset.css">
 <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
-<body>
-<h2><%=Quiz.showQuestion() %></h2>
-<img src="img/<%=Quiz.showImg() %>" alt="質問画像">
+<body class="quiz-body">
 
-<form method="post" action="AnswerServlet">
+<h2 class="quiz-question"><%= Quiz.showQuestion() %></h2>
+<img class="quiz-image" src="img/<%= Quiz.showImg() %>" alt="質問画像">
+
+<form class="quiz-form" method="post" action="AnswerServlet">
 <%
-for(int j=0;j<4;j++) {
+for(int j = 0; j < 4; j++) {
 %>	
-<button name="Answer" value="<%=Quiz.getOptionList().get(j) %>" type="submit"><%=Quiz.getOptionList().get(j) %></button>
+    <button class="quiz-button" name="Answer" value="<%= Quiz.getOptionList().get(j) %>" type="submit">
+        <%= Quiz.getOptionList().get(j) %>
+    </button>
 <%
 }
 %>
