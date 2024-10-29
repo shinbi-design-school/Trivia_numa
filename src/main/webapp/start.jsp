@@ -25,10 +25,6 @@
             <img src="img/logo-3.png" alt="ロゴロゴロゴ">
         </div>
 
-        <div class="hamburger" id="hamburger">
-            &#9776; <!-- ハンバーガーアイコン -->
-        </div>
-
         <ul class="main_nav" id="nav">
             <li class="Genre"><a href="#genre">動物</a></li>
             <li class="Genre"><a href="#genre">野球</a></li>
