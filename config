@@ -1,0 +1,22 @@
+[core]
+	symlinks = false
+	repositoryformatversion = 0
+	filemode = false
+	logallrefupdates = true
+[remote "origin"]
+	url = git@github.com:katayama38/Trivia_numa.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "master"]
+	remote = Trivia_numa.git
+	merge = refs/heads/master
+	rebase = false
+[remote "Trivia_numa.git"]
+	url = git@github.com:shinbi-design-school/Trivia_numa.git
+	fetch = +refs/heads/*:refs/remotes/Trivia_numa.git/*
+[remote "katayama"]
+	url = git@github.com:shinbi-design-school/Trivia_numa.git
+	fetch = +refs/heads/*:refs/remotes/katayama/*
+[branch "katayama"]
+	remote = origin
+	merge = refs/heads/katayama
+	rebase = false
