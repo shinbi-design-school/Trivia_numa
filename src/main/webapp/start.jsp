@@ -22,7 +22,7 @@
 
 <header class="top">
         <div class="logo" id="top">
-            <img src="img/logo-3.png" alt="ロゴロゴロゴ">
+            <img src="images/logo/logo-3.png" alt="ロゴロゴロゴ">
         </div>
 
         <ul class="main_nav" id="nav">

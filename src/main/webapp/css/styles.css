@@ -27,7 +27,7 @@ body {
 /* ロゴ */
 .logo img {
     margin-top: 10px;
-    max-width: 40%; /* ロゴサイズを調整 */
+    max-width: 10%; /* ロゴサイズを調整 */
     height: auto;
     border-radius: 20px;
 }
