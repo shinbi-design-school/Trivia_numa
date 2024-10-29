@@ -172,6 +172,12 @@
 	</div>
 </main>
 
+<footer>
+	<div class="footer">
+		<p>© 2024 トリビア・ヌマ</p>
+	</div>
+</footer>
+
 <script src="js/script.js"></script>
 
 </body>

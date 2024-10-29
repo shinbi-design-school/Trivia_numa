@@ -162,7 +162,6 @@ button img {
     text-align: center;
 }
 
-
 /* js */
 .fade-in {
     opacity: 0;
@@ -336,3 +335,4 @@ button img {
 .restart-button:hover {
     background-color: #0056b3; /* ホバー時の色 */
 }
+
