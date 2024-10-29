@@ -32,25 +32,14 @@ body {
     border-radius: 20px;
 }
 
-/* ハンバーガーメニュー */
-.hamburger {
-    position: absolute; /* 絶対位置 */
-    top: 15px; /* 上からの距離 */
-    right: 15px; /* 右からの距離 */
-    cursor: pointer; /* カーソルをポインターに */
-    z-index: 10; /* 他の要素より前面に */
-}
-
 /* メインナビゲーション */
 .main_nav {
-    display: none; /* 初期状態で非表示 */
-    flex-direction: column; /* 縦方向に並べる */
-    position: absolute; /* 絶対位置 */
-    top: 60px; /* ハンバーガーアイコンの下に配置 */
-    right: 0; /* 右端に配置 */
-    background-color: #003366; /* 背景色 */
-    width: 100%; /* 幅を100%に */
-    z-index: 9; /* ハンバーガーより下に */
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    background-color: #003366;
+    width: 100%;
+    z-index: 9;
 }
 
 .main_nav li {
@@ -130,6 +119,7 @@ button img {
 }
 
 /* スマートフォン表示時のスタイル */
+/* スマートフォン表示時のスタイル */
 @media (max-width: 798px) {
     .button-container {
         grid-template-columns: 1fr; /* 一列に */
@@ -148,6 +138,20 @@ button img {
     .return {
         font-size: 16px; /* フォントサイズを調整 */
         text-align: center;
+    }
+
+    .main_nav {
+        display: grid; /* グリッドレイアウトに変更 */
+        grid-template-columns: repeat(5, 1fr); /* 5列に設定 */
+        position: relative; /* 相対位置 */
+        background-color: #003366;
+        width: 100%;
+        z-index: 9;
+    }
+
+    .main_nav li {
+        margin: 5px; /* 各項目の間にマージンを追加 */
+        text-align: center; /* 中央揃え */
     }
 }
 
