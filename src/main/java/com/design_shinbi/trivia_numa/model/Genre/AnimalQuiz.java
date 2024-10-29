@@ -1,4 +1,5 @@
 package com.design_shinbi.trivia_numa.model.Genre;
+
 import com.design_shinbi.trivia_numa.model.Quiz;
 
 public class AnimalQuiz extends Quiz{
@@ -65,7 +66,8 @@ public class AnimalQuiz extends Quiz{
 	 
 	 public AnimalQuiz() {
 			super(AnimalQuiz.questions, AnimalQuiz.options, AnimalQuiz.answers,AnimalQuiz.explanations);
-		}
+			
+	 }
 
 
 }
