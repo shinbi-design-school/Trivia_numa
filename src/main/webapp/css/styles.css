@@ -28,9 +28,10 @@ body {
 /* ロゴ */
 .logo img {
     margin-top: 10px;
-    max-width: 40%; /* ロゴサイズを調整 */
+    max-width: 30%; /* ロゴサイズを調整 */
     height: auto;
     border-radius: 20px;
+	margin-bottom: 50px;
 }
 
 /* メインナビゲーション */
@@ -44,6 +45,7 @@ body {
     box-sizing: border-box; /* 余白がwidthに影響しないようにする */
     z-index: 9;
     overflow: hidden; /* 内容がはみ出る場合に非表示 */
+	white-space: nowrap;
 }
 
 .main_nav li {
@@ -94,7 +96,7 @@ footer {
 
 #programming {
 	width: 100%;
-	max-width: 70%;
+	max-width: 80%;
 	max-height: 80vh;
 	margin: 0 auto;
 }
@@ -119,7 +121,9 @@ form {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 15px; /* ギャップを少し減らす */
+	width: 100%;
     max-width: 100%;
+	
 }
 
 /* ボタン */
@@ -163,6 +167,16 @@ button img {
     height: auto;
     max-width: 100%;
     border-radius: 8px;
+}
+@media (max-width: 1040px) {
+	.main_nav {
+		display: grid; /* グリッドレイアウトに変更 */
+		grid-template-columns: repeat(5, 1fr); /* 5列に設定 */
+		position: relative; /* 相対位置 */
+		background-color: #003366;
+		width: 100%;
+		z-index: 9;
+	}
 }
 
 /* スマートフォン表示時のスタイル */
