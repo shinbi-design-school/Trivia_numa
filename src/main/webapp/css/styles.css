@@ -15,6 +15,7 @@ body {
     align-items: center;
     justify-content: center; /* 縦方向のセンタリング */
     min-height: 100vh; /* 最小の高さを100vhに */
+	width: 100%;
 }
 
 /* トップヘッダー */
@@ -84,6 +85,20 @@ footer {
   font-size: 0.9em;
 }
 
+#genre {
+	width: 100%;
+	max-width: 80%;
+	max-height: 80vh;
+	margin: 0 auto;
+}
+
+#programming {
+	width: 100%;
+	max-width: 70%;
+	max-height: 80vh;
+	margin: 0 auto;
+}
+
 /* セクションタイトル */
 h3 {
     margin: 30px 0; /* マージンを減らす */
@@ -126,7 +141,7 @@ button {
 }
 
 button h4 {
-    font-size: 1.1em; /* フォントサイズを調整 */
+    font-size: 1.5em; /* フォントサイズを調整 */
     margin: 5px 0;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -134,7 +149,7 @@ button h4 {
 }
 
 button p {
-    font-size: 0.8em; /* フォントサイズを調整 */
+    font-size: 1.2em; /* フォントサイズを調整 */
     margin: 0;
     text-align: center;
 }
@@ -144,7 +159,7 @@ button:hover {
 }
 
 button img {
-    width: 80%;
+    width: 100%;
     height: auto;
     max-width: 100%;
     border-radius: 8px;
@@ -152,6 +167,10 @@ button img {
 
 /* スマートフォン表示時のスタイル */
 @media (max-width: 798px) {
+	 body {
+		text-align: center;
+	 }
+	
     .button-container {
         grid-template-columns: 1fr; /* 一列に */
     }
@@ -162,7 +181,7 @@ button img {
     }
 
     button h4 {
-        font-size: 1em; /* フォントサイズを調整 */
+        font-size: 1.5em; /* フォントサイズを調整 */
         white-space: normal;
     }
 
@@ -218,71 +237,88 @@ button img {
 /*question*/
 .quiz-body {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-	text-align: center;
-    min-height: 100vh; /* 縦方向のセンタリング */
-    background-color: #007bff; /* 背景色を青に */
+    min-height: 100vh;
+    background-color: #007bff;
+    margin: 0 auto;
+    text-align: center;
+    width: 80%;
 }
 
-.button-wrap {
-    text-align: center; /* 中央揃え */
-    padding: 20px;
-    background-color: #ffffff; /* 背景色 */
-    border-radius: 10px; /* 角を丸める */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* シャドウ */
-    max-width: 600px; /* 最大幅 */
-    width: 90%; /* 幅を90%に */
+.quiz-container {
+	width: 100%;
+	height: auto;
+	max-width: 50%;
+	margin: 0 auto;
+	align-items: center;
 }
 
 .quiz-question {
-    font-size: 24px; /* フォントサイズ */
-    color: #333; /* テキストカラー */
-    margin-bottom: 20px; /* 下のマージン */
-}
-
-.quiz-image {
-    width: 100%; /* 画像をコンテナにフィットさせる */
-    max-width: 100%; /* 最大幅を制限 */
-    border-radius: 10px; /* 角を丸める */
-    margin-bottom: 20px; /* 下のマージン */
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
 }
 
 .quiz-form {
+    width: 100%;
     display: flex;
-    flex-direction: column; /* 縦に並べる */
+    flex-direction: column;
+    align-items: center; /* 中央揃え */
     gap: 20px; /* 上下のギャップ */
 }
 
 .button-wrap {
-	margin:0 auto;
-    display: grid; /* グリッドを使用 */
-    grid-template-columns: repeat(2, 1fr); /* 2列に設定 */
-    gap: 10px; /* ボタン間のギャップ */
+    background-color: #007bff;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2列 */
+    gap: 20px; /* ボタン間のギャップ */
+    justify-items: center; /* 各アイテムを中央揃え */
+    width: 100%;
+    max-width: 600px; /* 最大幅を設定 */
+    margin: 0 auto; /* 中央揃え */
 }
 
 .quiz-button {
     padding: 15px; /* ボタンのパディング */
     background-color: #007bff; /* ボタンの背景色 */
-    color: #ffffff; /* ボタンのテキストカラー */
-    border: none; /* ボーダーを消す */
+    color: #ffffff; /* テキストカラー */
+    border: 1px solid #333; /* ボーダーを消す */
     border-radius: 5px; /* 角を丸める */
     cursor: pointer; /* カーソルをポインターに */
-    transition: background-color 0.3s; /* ホバー時のトランジション */
+    transition: background-color 0.3s, transform 0.2s; /* ホバー時のトランジション */
     font-size: 16px; /* フォントサイズ */
+    width: 100%; /* 幅を100%に設定 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* シャドウを追加 */
 }
 
 .quiz-button:hover {
-    background-color: #0056b3; /* ホバー時の色 */
+    background-color: #ffffff; /* ホバー時の色 */
+    transform: translateY(-2px); /* ホバー時に浮き上がる */
+	color: #007bff;
 }
 
 .quiz-image {
-    width: 100%; /* 画像をコンテナにフィットさせる */
-    height: 200px; /* 高さを固定 */
-    object-fit: cover; /* 画像のアスペクト比を維持しながら中央に収める */
-    border-radius: 10px; /* 角を丸める */
-    margin-bottom: 20px; /* 下のマージン */
+    width: 100%; /* コンテナにフィット */
+    max-width: 80%; /* 最大幅を制限 */
+    max-height: 150px; /* 高さを制限 */
+    height: auto; /* 高さを自動に */
+    object-fit: cover; /* アスペクト比を維持 */
+    margin: 0 auto; /* 中央揃え */
 }
+
+@media (max-width: 798px) {
+    .button-wrap {
+        grid-template-columns: 1fr; /* 小さい画面では一列に */
+    }
+
+    .quiz-image {
+        max-width: 100%; /* 幅を100%に */
+        height: auto; /* 高さを自動に */
+    }
+}
+
 
 /*answer*/
 .answer-body {
@@ -348,29 +384,66 @@ button img {
 
 .result-container {
     text-align: center; /* 中央揃え */
-    padding: 20px;
+    padding: 30px; /* パディングを広げて余裕を持たせる */
     background-color: #ffffff; /* 背景色 */
     border-radius: 10px; /* 角を丸める */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* シャドウ */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* シャドウを強調 */
+    max-width: 500px; /* 最大幅を設定 */
+    width: 90%; /* 幅を90%に設定 */
+    margin: 0 auto; /* 中央揃え */
 }
 
 .result-title {
-    font-size: 24px; /* フォントサイズ */
+    font-size: 26px; /* フォントサイズを大きく */
     color: #333; /* テキストカラー */
     margin-bottom: 20px; /* 下のマージン */
 }
 
-.restart-button {
-    display: inline-block; /* ボタンのスタイル */
-    padding: 10px 20px; /* パディング */
-    background-color: #007bff; /* ボタンの背景色 */
-    color: #fff; /* ボタンのテキストカラー */
-    text-decoration: none; /* 下線を消す */
-    border-radius: 5px; /* 角を丸める */
-    transition: background-color 0.3s; /* ホバー時のトランジション */
+form {
+    display: flex;
+    flex-direction: column; /* 縦に並べる */
+    gap: 15px; /* 上下のギャップ */
+    margin-bottom: 20px; /* フォームとボタンの間にマージン */
 }
 
-.restart-button:hover {
+.result-button {
+    width: 100%; /* 幅を100%に */
+    padding: 15px 20px; /* ボタンのパディング */
+    background-color: #007bff; /* ボタンの背景色 */
+    color: #ffffff; /* テキストカラー */
+    border: none; /* ボーダーを消す */
+    border-radius: 5px; /* 角を丸める */
+    cursor: pointer; /* カーソルをポインターに */
+    transition: background-color 0.3s, transform 0.2s; /* ホバー時のトランジション */
+    font-size: 16px; /* フォントサイズ */
+    display: block; /* ブロック要素として表示 */
+}
+
+.result-button button {
+	width: 20%;
+	text-align: center;
+}
+
+.result-button:hover {
     background-color: #0056b3; /* ホバー時の色 */
+}
+
+.restart-button-return {
+    width: 100%; /* 幅を100%に */
+	max-width: 100%;
+    padding: 15px 20px; /* ボタンのパディング */
+    background-color: #28a745; /* ボタンの背景色 */
+    color: #fff; /* テキストカラー */
+    border: none; /* ボーダーを消す */
+    border-radius: 5px; /* 角を丸める */
+    cursor: pointer; /* カーソルをポインターに */
+    transition: background-color 0.3s; /* ホバー時のトランジション */
+    font-size: 16px; /* フォントサイズ */
+    display: block; /* ブロック要素として表示 */
+}
+
+button:hover {
+    background-color: #ffcc00; /* ホバー時の色 */
+    transform: translateY(-2px); /* ホバー時に浮き上がる */
 }
 
