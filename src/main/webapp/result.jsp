@@ -18,6 +18,13 @@ int result = (int) request.getAttribute("result");
         <a class="restart-button" href="start.jsp">最初から</a>
     </div>
 
+<footer>
+	<div class="footer">
+		<p>© 2024 トリビア・ヌマ</p>
+	</div>
+</footer>
+
     <script src="js/script.js"></script>
+    
 </body>
 </html>

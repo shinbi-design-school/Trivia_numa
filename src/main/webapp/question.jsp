@@ -27,7 +27,13 @@ Quiz quizs = (Quiz) session.getAttribute("quizs");
     	</div>
 	</form>
     </div>
-
+    
+    <footer>
+	<div class="footer">
+		<p>© 2024 トリビア・ヌマ</p>
+	</div>
+</footer>
+    
     <script src="js/script.js"></script>
 </body>
 </html>

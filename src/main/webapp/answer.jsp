@@ -20,6 +20,12 @@ String buttonUrl = (String) request.getAttribute("buttonUrl");
         <h3 class="explanation"><%= explanations %></h3>
         <a class="next-button" href="<%= buttonUrl %>">次へ</a>
     </div>
+    
+    <footer>
+	<div class="footer">
+		<p>© 2024 トリビア・ヌマ</p>
+	</div>
+</footer>
 
     <script src="js/script.js"></script>
 </body>
