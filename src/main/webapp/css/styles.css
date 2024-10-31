@@ -27,7 +27,7 @@ body {
 /* ロゴ */
 .logo img {
     margin-top: 10px;
-    max-width: 10%; /* ロゴサイズを調整 */
+    max-width: 40%; /* ロゴサイズを調整 */
     height: auto;
     border-radius: 20px;
 }
@@ -39,17 +39,49 @@ body {
     position: relative;
     background-color: #003366;
     width: 100%;
+    padding: 0 20px; /* 両端に余白を追加 */
+    box-sizing: border-box; /* 余白がwidthに影響しないようにする */
     z-index: 9;
+    overflow: hidden; /* 内容がはみ出る場合に非表示 */
 }
 
 .main_nav li {
     list-style-type: none; /* リストスタイルをなし */
+    margin: 0 10px; /* 各リスト項目の間隔を設定 */
 }
 
 .main_nav li a {
     text-decoration: none;
-    margin: 10px 0; /* マージンを設定 */
+    padding: 10px 5px; /* リンクの内側に余白を追加 */
     color: #ffcc00; /* テキストカラー */
+    transition: color 0.3s ease; /* ホバー時のスムーズな変化 */
+}
+
+.main_nav li a:hover {
+    color: #808080; /* ホバー時の色を少し明るく */
+}
+
+/*  フッター */
+footer {
+  color: #000000;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-content p {
+  font-size: 0.9em;
 }
 
 /* セクションタイトル */
@@ -119,7 +151,6 @@ button img {
 }
 
 /* スマートフォン表示時のスタイル */
-/* スマートフォン表示時のスタイル */
 @media (max-width: 798px) {
     .button-container {
         grid-template-columns: 1fr; /* 一列に */
@@ -160,6 +191,15 @@ button img {
     max-width: 600px; /* 最大幅を設定 */
     margin: 20px 0; /* マージンを調整 */
     text-align: center;
+}
+
+.return a {
+    transition: color 0.3s ease; /* スムーズな色変化 */
+}
+
+.return a:hover {
+    color: #ffcc00; /* ホバー時の色 */
+    text-decoration: underline; /* ホバー時に下線を追加 */
 }
 
 /* js */
@@ -243,8 +283,6 @@ button img {
     border-radius: 10px; /* 角を丸める */
     margin-bottom: 20px; /* 下のマージン */
 }
-
-
 
 /*answer*/
 .answer-body {

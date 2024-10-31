@@ -22,7 +22,7 @@
 
 <header class="top">
         <div class="logo" id="top">
-            <img src="images/logo/logo-3.png" alt="ロゴロゴロゴ">
+            <img src="img/logo-3.png" alt="ロゴロゴロゴ">
         </div>
 
         <ul class="main_nav" id="nav">
@@ -173,9 +173,9 @@
 </main>
 
 <footer>
-	<div class="footer">
-		<p>© 2024 トリビア・ヌマ</p>
-	</div>
+	<div class="footer-container">
+    <div class="footer-content">
+      <p>© 2024 トリビア・ヌマ</p>
 </footer>
 
 <script src="js/script.js"></script>
