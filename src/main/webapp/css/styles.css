@@ -214,7 +214,7 @@ button img {
     }
 
     .main_nav li {
-        margin: 5px; /* 各項目の間にマージンを追加 */
+        margin: 0 auto; /* 各項目の間にマージンを追加 */
         text-align: center; /* 中央揃え */
     }
 }
