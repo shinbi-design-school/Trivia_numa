@@ -34,7 +34,7 @@ public class Html_Css extends Quiz {
 	 private static String[] answers = {
 		        "htmlタグ",
 		        "titleタグ",
-		        "&lt;p&gt;",
+		        "pタグ",
 		        "background-color",
 		        ".classname { ... }",
 		        "spacing",
