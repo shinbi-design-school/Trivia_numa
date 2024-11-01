@@ -461,31 +461,3 @@ button:hover {
     transform: translateY(-2px); /* ホバー時に浮き上がる */
 }
 
-
-/*トップフェード*/
-/* フェードインのスタイル */
-.fade-in {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
-}
-
-.fade-in.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/*ローディングアニメーション*/
-#loading-text {
-	opacity: 0;
-	animation: ease-in 2s forwards;
-}
-
-@keyframes fade-in {
-	from{
-		opacity: 0;
-	}
-	to {
-		opacity: 1;
-	}
-}

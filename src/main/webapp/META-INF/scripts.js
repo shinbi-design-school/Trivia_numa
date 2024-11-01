@@ -7,7 +7,3 @@ document.getElementById("hamburger").addEventListener("click", function() {
     }
 });
 
-window.onload = function() {
-    const loadingText = document.getElementById("loading-text");
-    loadingText.style.opacity = 1; // ロード完了時にテキストを表示
-};
