@@ -28,40 +28,53 @@ public class QuestionServlet extends HttpServlet {
 		HttpSession session = request.getSession();
 		String Genre = request.getParameter("Genre");
 		Quiz quizs =null;
+		String scoretype = null;
 		switch (Genre){
 			case "AnimalQuiz":
 			 quizs = new AnimalQuiz();
+			 scoretype = "hobby_score";
 			 break;
 			case "BaseballQuiz":
 				 quizs = new BaseballQuiz();
+				 scoretype = "hobby_score";
 				 break;
 			case "EntertainmentQuiz":
 				 quizs = new EntertainmentQuiz();
+				 scoretype = "hobby_score";
 				 break;
 			case "PhotographQuiz":
 				 quizs = new PhotographQuiz();
+				 scoretype = "hobby_score";
 				 break;
 			case "SoccerQuiz":
 				 quizs = new SoccerQuiz();
+				 scoretype = "hobby_score";
 				 break;
 			case "Html_Css":
 				 quizs = new Html_Css();
+				 scoretype = "study_score";
 				 break;
 			case "JavaScript":
 				 quizs = new JavaScript();
+				 scoretype = "study_score";
 				 break;
 			case "Java_F":
 				 quizs = new Java_F();
+				 scoretype = "study_score";
 				 break;
 			case "Jsp_Servlet":
 				 quizs = new Jsp_Servlet();
+				 scoretype = "study_score";
 				 break;
 			case "Mysql":
 				 quizs = new Mysql();
+				 scoretype = "study_score";
 				 break;
 		}
 		Quiz.shuffleOption();
 		session.setAttribute("quizs", quizs);
+		session.setAttribute("scoretype", scoretype);
+		
 		RequestDispatcher dispatcher = request.getRequestDispatcher("question.jsp");
 		dispatcher.forward(request, response);
 	}
