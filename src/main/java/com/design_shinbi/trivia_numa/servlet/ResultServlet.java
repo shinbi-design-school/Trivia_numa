@@ -37,6 +37,7 @@ public class ResultServlet extends HttpServlet {
 		session.removeAttribute("quizs");
 		
 		request.setAttribute("result", result);
+		session.setAttribute("result", result);
 
 		RequestDispatcher dispatcher = request.getRequestDispatcher("result.jsp");
 		dispatcher.forward(request, response);
