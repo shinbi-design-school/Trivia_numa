@@ -45,7 +45,7 @@
 <h3 class="genre">ーーーーーー気になるクイズを選択してください！ーーーーーー</h3>
 
 
-<form method="post" action="QuestionServlet">
+<form method="post" action="loading.jsp">
 
 	<div class="button-container">
 		<div id="genre">
@@ -114,7 +114,7 @@
 	</div>
 <h3 class="programming">ーーーーーー自身の知識を試してみてください！ーーーーーー</h3>
 
-<form method="post" action="QuestionServlet">	
+<form method="post" action="loading.jsp">	
 	<div class="button-container">
 		<div id="programming">
   			<button name="Genre" value="Html_Css" type="submit">
