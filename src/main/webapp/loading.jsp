@@ -33,7 +33,7 @@
             }
         }
         .fade-out {
-            opacity: 0; /* 完全に透明に */
+            opacity: 0; /* 完全透明に */
         }
     </style>
 </head>
