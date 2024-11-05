@@ -13,7 +13,7 @@
             justify-content: center;
             align-items: center;
             background-color: #f9f9f7;
-            transition: opacity 0.5s ease; /* フェードアウトの効果 */
+            transition: opacity 0.5s ease; /* フェードアウト効果 */
         }
         .loader {
             width: 40px;
