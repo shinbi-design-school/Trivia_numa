@@ -15,6 +15,7 @@ import com.design_shinbi.trivia_numa.model.Genre.BaseballQuiz;
 import com.design_shinbi.trivia_numa.model.Genre.EntertainmentQuiz;
 import com.design_shinbi.trivia_numa.model.Genre.PhotographQuiz;
 import com.design_shinbi.trivia_numa.model.Genre.SoccerQuiz;
+import com.design_shinbi.trivia_numa.model.Genre.SportsQuiz;
 import com.design_shinbi.trivia_numa.model.programming.Html_Css;
 import com.design_shinbi.trivia_numa.model.programming.JavaScript;
 import com.design_shinbi.trivia_numa.model.programming.Java_F;
@@ -48,6 +49,10 @@ public class QuestionServlet extends HttpServlet {
 				 break;
 			case "SoccerQuiz":
 				 quizs = new SoccerQuiz();
+				 scoretype = "hobby_score";
+				 break;
+			case "SportsQuiz":
+				 quizs = new SportsQuiz();
 				 scoretype = "hobby_score";
 				 break;
 			case "Html_Css":
