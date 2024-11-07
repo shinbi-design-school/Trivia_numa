@@ -146,6 +146,23 @@ button img {
     border-radius: 8px;
 }
 
+/* スマートフォン表示時のスタイル */
+@media (max-width: 1080px) {
+	.main_nav {
+	        display: grid;
+	        grid-template-columns: repeat(5, 1fr);
+	        position: relative;
+	        background-color: #003366;
+	        width: 100%;
+	        z-index: 9;
+	    }
+
+	    .main_nav li {
+	        margin: 5px;
+	        text-align: center;
+	    }
+
+}
 
 /* スマートフォン表示時のスタイル */
 @media (max-width: 798px) {
@@ -171,20 +188,20 @@ button img {
         font-size: 16px;
         text-align: center;
     }
+	
+	.main_nav  {
+	    display: grid;
+	    grid-template-columns: repeat(2, 2fr);
+	    position: relative;
+	    background-color: #003366;
+	    width: 100%;
+	    z-index: 9;
+	}
 
-    .main_nav {
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        position: relative;
-        background-color: #003366;
-        width: 100%;
-        z-index: 9;
-    }
-
-    .main_nav li {
-        margin: 5px;
-        text-align: center;
-    }
+	.main_nav li {
+	    margin: 5px;
+	    text-align: center;
+	}
 	
 	#animal, #baseball, #soccer, #sports, #enta, #photo {
 		width: 100%;
