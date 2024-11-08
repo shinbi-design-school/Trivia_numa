@@ -7,9 +7,9 @@ public class Html_Css extends Quiz {
 	
 	private static String[][] questions = {
 			{"次のうち、HTMLの基本文書の開始タグはどれですか？","image-program/1.jpg"},
-			{"HTML文書のタイトルを設定するタグはどれですか？","image-program/2.jpg"},
+			{"HTML文書のタイトルを設定するタグはどれですか？","image-program/2.jpeg"},
 			{"段落を作成するために使用するHTMLタグはどれですか？","image-program/3.jpg"},
-			{"次のCSSプロパティの中で、背景色を指定するものはどれですか？","image-program/4.jpg"},
+			{"次のCSSプロパティの中で、背景色を指定するものはどれですか？","image-program/4.jpeg"},
 			{"次のうち、特定のクラスを持つ要素を選択するCSSセレクタはどれですか？","image-program/5.jpg"},
 			{"CSSのボックスモデルに含まれない要素はどれですか？","image-program/6.jpg"},
 			{"HTMLで画像を挿入するためのタグはどれですか？","image-program/7.jpg"},
@@ -59,5 +59,4 @@ public class Html_Css extends Quiz {
 	 public Html_Css() {
 			super(Html_Css.questions, Html_Css.options, Html_Css.answers, Html_Css.explanations);
 		}
-
 }
