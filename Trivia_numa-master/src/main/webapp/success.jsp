@@ -102,18 +102,27 @@
 <body>
 
     <div class="container">
-        <div id="ranking_box">
+        <ol id="ranking_box">
             <%
+            int rankNumber = 1;
             for(User rank : ranking) {
             %>
-            <div class="user">
-                <div class="name"><%= rank.getName() %></div>
-                <div class="score"><%= rank.getScore() %></div>
-            </div>
+            <li class="user">
+                <div class="name">
+                    <p>TOP <%= rankNumber %> </p>
+                    <%= rank.getName() %> さん
+                </div>
+                
+                <div class="score">
+                    <p>SCORE 5問中 / </p>
+                    <%= rank.getScore() %> 問正解です！
+                </div>
+            </li>
             <%
+                rankNumber++;
             }
             %>
-        </div>
+        </ol>
         <a href="start.jsp">最初から</a>
     </div>
 
