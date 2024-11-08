@@ -300,6 +300,8 @@ button img {
 }
 
 .quiz-button {
+	display: flexbox;
+	justify-content: center;
     padding: 15px;
     background-color: #007bff;
     color: #ffffff;
@@ -351,6 +353,8 @@ button img {
 	}
 
 	.quiz-button {
+		display: flexbox;
+		justify-content: center;
 	    padding: 15px;
 	    background-color: #007bff;
 	    color: #ffffff;
