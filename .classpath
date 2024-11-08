@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry excluding="com/design_shinbi/trivia_numa/servlet/|com/design_shinbi/trivia_numa/test/" kind="src" path="Trivia_numa/Trivia_numa-master/src/main/java"/>
+	<classpathentry kind="src" path="Trivia_numa/Trivia_numa-master/src/main/java/com/design_shinbi/trivia_numa/servlet"/>
+	<classpathentry kind="src" path="Trivia_numa/Trivia_numa-master/src/main/java/com/design_shinbi/trivia_numa/test"/>
+	<classpathentry kind="lib" path="Trivia_numa/Trivia_numa-master/src/main/webapp/WEB-INF/lib/mysql-connector-j-9.0.0.jar"/>
+	<classpathentry kind="output" path="Trivia_numa/Trivia_numa-master/build/classes"/>
+</classpath>
