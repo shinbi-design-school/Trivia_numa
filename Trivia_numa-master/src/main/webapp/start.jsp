@@ -15,17 +15,21 @@
 <head>
 
 <meta charset="UTF-8">
-<title></title>
+<title>トリビアの沼へようこそ！</title>
+<meta name="description" content="知ってる人はしている。知らない人覚えてね。昭和生まれ全開のトリビアの ～〇～。あっちは「へぇ～」。こっちは「ほぉ～」。">
+<meta name="keywords" content="HTML, SEO, 動物, スポーツ, 勉強">
+
 <link rel="stylesheet" type="text/css" href="css/styles.css">
 
 </head>
 <body>
 
 <header class="top">
+	<div class="header_top">
         <div class="logo" id="top">
             <img src="img/logo-3.png" alt="ロゴロゴロゴ">
         </div>
-
+	</div>
         <ul class="main_nav" id="nav">
             <li class="Genre"><a href="#animal">動物</a></li>
             <li class="Genre"><a href="#baseball">野球</a></li>

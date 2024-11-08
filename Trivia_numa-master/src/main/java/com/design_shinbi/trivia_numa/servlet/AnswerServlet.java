@@ -32,7 +32,7 @@ public class AnswerServlet extends HttpServlet {
 		Quiz.currentQuestion();
 		
 		String buttonUrl = null;
-		if(Quiz.getCurrentQuestion()>4) {
+		if(Quiz.getCurrentQuestion()>4) {	//数字を変更すると出題数を変更できる。
 			buttonUrl = "ResultServlet";
 		}else {
 			Quiz.shuffleOption();
