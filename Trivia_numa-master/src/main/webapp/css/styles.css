@@ -75,6 +75,20 @@ body {
 	margin: 0 auto;
 }
 
+#mysql {
+	width: 100%;
+	max-width: 80%;
+	max-height: 80vh;
+	margin: 0 auto;
+}
+
+#jsp_serv {
+	width: 100%;
+	max-width: 80%;
+	max-height: 80vh;
+	margin: 0 auto;
+}
+
 /* セクションタイトル */
 h3 {
     margin: 180px 0;
